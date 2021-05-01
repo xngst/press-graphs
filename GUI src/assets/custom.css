@@ -1,0 +1,84 @@
+.DateInput_input { font-size: 1rem}
+
+::selection {
+  background-color: #fcf8a9;
+  color: black;
+ }
+
+.nav-link{
+  background-color: #ffffff;
+  color: #000000;
+ }
+
+.nav-link:hover{
+  background-color:#e6f7ff;
+  color: #000000;
+ }
+
+.dropdown-item:hover{
+  background-color:#e6f7ff;
+  color: #000000;
+ }
+
+.selected_cells{
+  background-color: #fcf8a9;
+  color: black;
+ }
+
+#submit-button{
+  background-color: #4d4d4d;
+  border-color: #4d4d4d;
+  color: white;
+ }
+
+#search_input{
+  color: black;
+ }
+
+.js-plotly-plot .plotly .cursor-crosshair{
+  cursor: pointer !important;
+ }
+
+.btn-outline-info:focus, .btn-outline-info.focus{
+  box-shadow:0 0 0 0.2rem rgba(0,0,0,0.5);
+}
+
+/*
+LOADING BEHAVIOUR
+https://stackoverflow.com/questions/54439548/display
+-loading-symbol-while-waiting-for-a-result-with-plot-ly-dash
+*/
+
+@keyframes fadein {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0.5;
+    }
+}
+
+._dash-loading-callback {
+  font-family: sans-serif;
+  padding-top: 50px;
+  color: rgb(90, 90, 90);
+
+  /* The banner */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  cursor: wait;
+
+  opacity: 0;
+  background-color: rgb(250, 250, 250);
+  /* Delay animation by 1s to prevent flashing 
+     and smoothly transition the animation over 0.5s 
+   */
+  -moz-animation: fadein 0.5s ease-in 1s forwards; /* Firefox */
+  -webkit-animation: fadein 0.5s ease-in 1s forwards; /* Safari and Chrome */
+  -o-animation: fadein 0.5s ease-in 1s forwards; /* Opera */
+    animation: fadein 0.5s ease-in 1s forwards;
+}
