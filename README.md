@@ -1,5 +1,6 @@
-# press-graphs
+# About the pressgraps project
 Press analytics Flask based API and Flask-Dash based GUI
+#todo
 
 # Data and ETL process
 Pressgraphs relyes on a remote mysql database which is updated every day by a bot.
@@ -9,7 +10,7 @@ This repository consists only of the API and GUI part of the application. The Da
  Pressgraphs implements an [Model View Control (MVC)](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) Architecture with its main components; 
  * Remote Database (not included and not described in this repository)
  * WebAPI 
- * WebGUI 
+ * WebGUI   
 Both the API and GUI use Flask, however the GUI uses Dash GUI extension on top of the Flask environment.
 
 ### WebAPI 
@@ -104,3 +105,5 @@ Dash is a productive Python framework for building web analytic applications.
 Written on top of Flask, Plotly.js, and React.js, Dash is ideal for building data visualization apps with highly custom user interfaces in pure Python. It's particularly suited for anyone who works with data in Python.
 Through a couple of simple patterns, Dash abstracts away all of the technologies and protocols that are required to build an interactive web-based application. Dash is simple enough that you can bind a user interface around your Python code in an afternoon.
 Dash apps are rendered in the web browser. You can deploy your apps to servers and then share them through URLs. Since Dash apps are viewed in the web browser, Dash is inherently cross-platform and mobile ready.
+
+<hr>
